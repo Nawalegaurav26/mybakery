@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bakery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #ff6f61;
+            color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin: 5px 0 0;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero img {
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            animation: float 3s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #ff6f61;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .menu {
+            padding: 50px 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 1200px;
+        }
+
+        .menu h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: #ff6f61;
+            margin-bottom: 30px;
+        }
+
+        .menu table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .menu th, .menu td {
+            padding: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .menu th {
+            background: #ff6f61;
+            color: white;
+        }
+
+        .menu td img {
+            width: 80px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .menu td img:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #3b2222;
+            color: white;
+            margin-top: 50px;
+        }
+
+        footer a {
+            color: #ff8a7f;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .cta {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .cta button {
+            background: #ff6f61;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s;
+        }
+
+        .cta button:hover {
+            background: #e65a50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Bakery</h1>
+        <p>Baking memories, one treat at a time 🎉</p>
+    </header>
+
+    <section class="hero">
+        <img src="C:\Users\Dell\Downloads\bakery-logo.png" alt="MyBakery-Logo-Image-IIT-Bombay">
+        <h2>Welcome to My Bakery</h2>
+        <p>Your neighborhood destination for freshly baked cakes, pastries, and sweet moments. Every item we bake is made with love, care, and the finest ingredients to give you a taste you’ll always remember.</p>
+    </section>
+
+    <section class="menu">
+        <h3>Our Menu 🍰</h3>
+        <table>
+            <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Weight</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/1200x/4b/b2/ce/4bb2ce4e64d140a11a331d560ef9744e.jpg" alt="Chocolate-Cake-MyBakery-IIT-Bombay"></td>
+                <td>Chocolate Cake</td>
+                <td>500g</td>
+                <td>200 Rupees</td>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/736x/f8/60/e4/f860e4243928ba4d25230c0642102dde.jpg" alt="Vanilla-Cake-MyBakery-IIT-Bombay"></td>
+                <td>Vanilla Cake</td>
+                <td>500g</td>
+                <td>250 Rupees</td>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/736x/f2/f5/02/f2f5020d5fb1a006529a8c60a9f7a4bc.jpg" alt="Red-Velvet-Cake-MyBakery-IIT-Bombay"></td>
+                <td>Red Velvet Cake</td>
+                <td>600g</td>
+                <td>300 Rupees</td>
+            </tr>
+            <tr>
+                <td><img src="https://i.pinimg.com/1200x/c6/bd/74/c6bd749cfdad355b85d3d5d69d8d16fb.jpg" alt="Blueberry-Muffin-Cake-MyBakery-IIT-Bombay"></td>
+                <td>Blueberry Muffin</td>
+                <td>150g</td>
+                <td>100 Rupees</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="cta">
+        <button onclick="alert('Order Now!')">Order Now</button>
+    </section>
+
+    <footer>
+        <p>📍 Visit us at 123 Baker Street, Sweet City, Bombay.<br>Contact us at (+91) 1234567890 | email: bakery@mybakery.com</p>
+        <p>Follow us on <a href="https://www.instagram.com/mybakery" target="_blank">Instagram</a> | <a href="https://www.facebook.com/mybakery" target="_blank">Facebook</a> | <a href="https://www.twitter.com/mybakery" target="_blank">Twitter</a></p>
+        <p>© 2025 My Bakery. Made for Fun 👻👻.</p>
+    </footer>
+</body>
+</html>
